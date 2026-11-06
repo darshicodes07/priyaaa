@@ -1,10 +1,17 @@
 # priyaaa
-# Prompt user for input and convert to floating-point numbers
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+def find_factorial(n):
+    if n < 0:
+        return "Factorial does not exist for negative numbers."
+    
+    factorial = 1
+    # Loop from 1 to n (n + 1 is exclusive)
+    for i in range(1, n + 1):
+        factorial *= i
+        
+    return factorial
 
-# Calculate the sum
-result = num1 + num2
+# Example usage:
+num = 5
+print(f"The factorial of {num} is {find_factorial(num)}")
 
-# Display the output
-print(f"The sum is: {result}")
+
